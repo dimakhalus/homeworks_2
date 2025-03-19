@@ -1,0 +1,75 @@
+.intro {
+    color: aqua;
+}
+
+#intro-about-ukraine {
+    color: red;
+}
+
+.content-list .content-item {
+    color: blue;
+}
+
+.intro>p {
+    color: greenyellow;
+}
+
+#climate+p {
+    color: green;
+}
+
+.about-ukraine h2 {
+    color: red;
+}
+
+.about-ukraine h2~h2 {
+    color: yellow;
+}
+
+#population~p {
+    color: blueviolet;
+}
+
+#time-zone+p {
+    color: springgreen;
+}
+
+p>span {
+    color: #5d5d5d;
+}
+
+[class*="our"] {
+    color: violet;
+}
+
+[class*="rce"]>h3 {
+    color: tomato;
+}
+
+div ul>li {
+    color: red;
+}
+
+div ul li ul li {
+    color: blue;
+}
+
+div ul li ul li+li {
+    color: orange;
+}
+
+div ul li ul li ol li {
+    color: #4597f7;
+}
+
+div ul li ul li ol li+li {
+    color: #5d5d5d;
+}
+
+ul>li>ul>li>span {
+    color: #a0f0fc;
+}
+
+div ul>li+li {
+    color: green;
+}
