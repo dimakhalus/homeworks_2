@@ -284,10 +284,6 @@
     background-color: #4F4F4F;
 }
 
-.visited>a:visited {
-    color: #fff;
-}
-
 .focus>a:focus {
     outline: 4px dotted #fff;
 }
