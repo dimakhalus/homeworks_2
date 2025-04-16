@@ -1,0 +1,241 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.header {
+    height: 200px;
+}
+
+.service {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.link-service {
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 2px solid #999;
+}
+
+.link-service:hover {
+    border-bottom: 2px solid rgb(5, 195, 5);
+}
+
+.link-service__image {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.link-service__title {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.link-service__description {
+    color: #999;
+    text-align: center;
+}
+
+.title {
+    display: inline-block;
+    padding-left: 300px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.view-all {
+    margin-left: 450px;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #00B207;
+}
+
+.view-all::after {
+    content: "";
+    background: url("../img/after-view-icon.png") 0 0 no-repeat;
+    background-size: 10px;
+    width: 10px;
+    height: 10px;
+    margin-left: 12px;
+}
+
+.products-list {
+    padding-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.item-products {
+    display: inline-block;
+    max-width: 210px;
+    border: 2px solid #999;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.item-products:hover {
+    border: 2px solid #119c26;
+}
+
+.item-products__name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #999;
+    padding-left: 5px;
+}
+
+.item-products__price {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline;
+    padding-left: 5px;
+}
+
+.item-products__sale-price {
+    display: inline;
+}
+
+.item-products__add {
+    margin-left: 60px;
+}
+
+.item-products__rating {
+    display: block;
+    padding: 5px;
+}
+
+
+.background-color {
+    background: linear-gradient(180deg, #F2F5F3 20.01%, #FFF 100%);
+}
+
+.categories__view-all {
+    margin-left: 360px;
+}
+
+.categories-list {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.categories-list__item {
+    display: inline-block;
+    width: 130px;
+    height: 150px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    border: 2px solid #00b20600;
+}
+
+.item-categories__name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.item-categories__count {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #808080;
+}
+
+.categories-list__item:hover {
+    border: 2px solid #00B207;
+}
+
+.categories-list__item:hover .item-categories__name {
+    color: #2C742F;
+}
+
+.item-categories__image {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.block-trusted {
+    padding-top: 150px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+.block-trusted__images {
+    width: 1000px;
+    display: flex;
+}
+
+
+.block-trusted__img--small {
+    width: 220px;
+    height: 350px;
+}
+
+.block-trusted__img--big {
+    width: 350px;
+    margin-left: 25px;
+    height: 400px;
+}
+
+
+.block-trusted__text {
+    width: 800px;
+}
+
+.block-trusted__title {
+    display: block;
+    width: 400px;
+    padding: 20px 10px 0 0;
+}
+
+.item-block-trusted__subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-top: 20px;
+}
+
+.item-block-trusted__subtitle::before {
+    content: "";
+    background: url("/img/check.png") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    margin-right: 10px;
+}
+
+.item-block-trusted__text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #808080;
+    margin-left: 30px;
+    width: 300px;
+}
+
+.block-trusted__shop-button {
+    background-color: #00B207;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
