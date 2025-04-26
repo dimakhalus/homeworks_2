@@ -1,0 +1,65 @@
+/* ===== Transform-Style ===== */
+/* =========================== */
+
+.section-transform__translate-block:hover {
+    transform: translate(20px, 20px);
+    transition: transform 0.5s;
+}
+
+.section-transform__scale-block:hover {
+    transform: scale(0.5, 0.5);
+    transition: transform 0.5s;
+}
+
+.section-transform__rotate-block:hover {
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.section-transform__skew-block:hover {
+    transform: skew(10deg, 10deg);
+    transition: transform 0.5s;
+}
+
+.section-transform__matrix-block:hover {
+    transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+    transition: transform 0.5s;
+}
+
+.section-transform__origin-block:hover {
+    transform-origin: bottom;
+    transform: rotate(20deg);
+    transition: transform 0.5s;
+}
+
+.section-transform__translate3d-wrapper {
+    perspective: 200px;
+}
+
+.section-transform__translate3d-block:hover {
+    transition: transform 0.5s;
+    transform: translate3d(20px, 20px, 20px);
+}
+
+.section-transform__scale3d-wrapper {
+    perspective: 300px;
+}
+
+.section-transform__scale3d-block:hover {
+    transition: transform 0.5s;
+    transform: scale3d(1.2, 1.2, 2);
+}
+
+.section-transform__rotate3d-wrapper {
+    perspective: 300px;
+}
+
+.section-transform__rotate3d-block:hover {
+    transition: transform 0.5s;
+    transform: rotate3d(2, 3, 1, 45deg);
+}
+
+.section-transform__rotate-translate-block:hover {
+    transition: transform 0.5s;
+    transform: translate(20px, 20px) rotate(-30deg);
+}

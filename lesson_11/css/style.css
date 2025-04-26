@@ -1,0 +1,253 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("transform-style.css");
+
+.header>h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.section-transform {
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ==== wrapper and block style ====*/
+/* ================================ */
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #808080;
+    padding: 20px;
+    margin: 5px 18px;
+}
+
+.block {
+    border: 5px dotted #808080;
+    max-width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+}
+
+.wrapper>p {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    padding: 10px;
+    max-width: 1300px;
+    background: url("../img/road.jpg") 0 0 no-repeat;
+    background-size: 1300px 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.car {
+    position: absolute;
+    left: 35%;
+    bottom: 100px;
+}
+
+.car__frame {
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(to bottom, #3a3a3a 60%, #2a2a2a 100%);
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-top: 1px solid #808080;
+    box-shadow: 40px 10px 30px #2c2a2a;
+    width: 400px;
+    height: 50px;
+    border-radius: 0 0 35px 35px;
+}
+
+.car__frame::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #807272;
+    border-radius: 25px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.car__frame::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #807272;
+    border-radius: 25px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.car__wheel {
+    position: absolute;
+    z-index: 1;
+    background: url("../img/wheel-icon.png") 0 0 no-repeat;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+
+.car__wheel:hover {
+    transform: rotate(-360deg);
+    transition: transform 1s;
+}
+
+.car__wheel--first {
+    top: 20px;
+    left: 30px;
+}
+
+.car__wheel--second {
+    top: 20px;
+    right: 30px;
+}
+
+.car__upper-frame {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 70px;
+}
+
+.car__front-side {
+    background-color: #303030;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    border-radius: 100% 0 0 0;
+}
+
+.car__front-side::before {
+    background: #4a4a4a;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    border: 1.5px solid #000000;
+    border-left: 3px solid rgba(0, 0, 0, 0.752);
+    border-bottom: none;
+    box-shadow: -13px 0 10px yellow;
+    content: "";
+    border-radius: 0 100% 100% 0;
+}
+
+.car__middle-side {
+    background-color: #303030;
+    border-top: 4px solid #000;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    height: 70px;
+    border-radius: 100% 65% 0 0;
+}
+
+.car__salon {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    background: url("../img/salon.jpg") 0 0 no-repeat;
+    background-size: 150px 100px;
+    border-radius: 100% 10% 10% 10% / 80% 10% 10% 10%;
+}
+
+.car__salon::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 100% 10% 10% 10% / 80% 10% 10% 10%;
+}
+
+.car__front-door {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    background: linear-gradient(to bottom, #3a3a3a 60%, #2a2a2a 100%);
+    border: 2px solid #111;
+    border-radius: 100% 10% 10% 10% / 80% 10% 10% 10%;
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.1),
+        4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.car__front-door:hover {
+    transform-origin: left;
+    transform: rotate3d(1, 20, 0, 40deg);
+}
+
+.car__back-door {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    left: 120px;
+    top: 15px;
+    background: linear-gradient(to bottom, #3a3a3a 60%, #2a2a2a 100%);
+    border: 2px solid #111;
+    border-radius: 100% 10% 10% 10% / 80% 10% 10% 10%;
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.1),
+        4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.car__window {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 50px;
+    height: 40px;
+    background: rgba(135, 206, 235, 0.4);
+    border-radius: 100% 0% 5% 5%;
+    border: 2px solid #888;
+}
+
+.car__handle {
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    width: 15px;
+    height: 4px;
+    background: #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.car__back-side {
+    background-color: #303030;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    border-radius: 0 100% 0 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+}
