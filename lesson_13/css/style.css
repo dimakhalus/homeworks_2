@@ -1,0 +1,226 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+/* === Wrapper === */
+/* =============== */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    padding: 15px;
+    background-color: #808080;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* === Main Content === */
+/* ==================== */
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Faculty === */
+/* =============== */
+
+.faculty-wrapper {
+    background-color: #412672;
+    display: flex;
+    justify-content: center;
+}
+
+.faculty {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.faculty__title {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+
+.faculty__title>h2>span {
+    font-weight: 700;
+}
+
+.faculty__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.faculty__item {
+    padding: 10px;
+    background-color: #fff;
+    max-width: 300px;
+    max-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faculty__item:hover {
+    background-color: #FFBE48;
+    cursor: pointer;
+}
+
+
+.item-block__content {
+    flex-grow: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #4f4f4f;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-block__content>h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+}
+
+.item-block__link {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #FE3F3F;
+}
+
+.item-block__link>a:hover {
+    text-decoration: underline;
+}
+
+/* === Branches Content === */
+/* ======================== */
+
+.branches-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.branches {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.branches__content {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #412672;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+}
+
+.branches__content>h3 {
+    font-size: 20px;
+}
+
+.branches__content>h3>span {
+    font-weight: 700;
+}
+
+.branches__content>ul {
+    color: #4F4F4F;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.branches__content>ul>li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.branches__content>ul>li::before {
+    content: "";
+    background: url("../img/list-item-icon.png") 0 0 no-repeat;
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+}
+
+.branches__img {
+    max-width: 600px;
+}
+
+/* === Academy Wrapper === */
+/* ======================= */
+
+.academy-wrapper {
+    background-color: #412672;
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.academy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.academy__title>h3>span {
+    font-weight: 700;
+}
+
+.academy__list {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.academy__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-academy__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.item-academy__content>span {
+    font-weight: 700;
+}
+
+.item-academy__content>p {
+    font-size: 10px;
+}
