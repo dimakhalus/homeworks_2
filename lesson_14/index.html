@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework №14 Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>Homework №14 by Khalus</h1>
+        </header>
+
+        <main class="main">
+            <div class="checkout">
+                <form class="form checkout__form">
+                    <section class="form__section">
+                        <h2 class="form__title">Billing Information</h2>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="first-name" class="form__label">First name</label>
+                                <input id="first-name" class="form__input" type="text" placeholder="Your first name">
+                            </div>
+                            <div class="form__group">
+                                <label for="last-name" class="form__label">Last name</label>
+                                <input id="last-name" class="form__input" type="text" placeholder="Your last name">
+                            </div>
+                            <div class="form__group">
+                                <label for="company-name" class="form__label form__label--color-font">Company Name
+                                    <span>(optional)</span></label>
+                                <input id="company-name" class="form__input" type="text" placeholder="Company name">
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="street-adress" class="form__label">Street Address</label>
+                            <input id="street-adress" class="form__input" type="text" placeholder="Email">
+                        </div>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="country-region" class="form__label">Country / Region</label>
+                                <select id="country-region" class="form__input">
+                                    <option>Select</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label for="states" class="form__label">States</label>
+                                <select id="states" class="form__input">
+                                    <option>Selects</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label for="zip" class="form__label">Zip Code</label>
+                                <input id="zip" class="form__input" type="text" placeholder="Zip Code">
+                            </div>
+                        </div>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input id="email" class="form__input" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone</label>
+                                <input id="phone" class="form__input" type="tel" placeholder="Phone number">
+                            </div>
+                        </div>
+
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="ship-diff">
+                            <label for="ship-diff">Ship to a different address</label>
+                        </div>
+                    </section>
+
+                    <section class="form__section">
+                        <h2 class="form__title form__title--top-border">Additional Info</h2>
+                        <div class="form__group">
+                            <label class="form__label">Order Notes (Optional)</label>
+                            <textarea class="form__input"
+                                placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </section>
+                </form>
+
+
+                <div class="summary checkout__summary">
+                    <h2 class="summary__title">Order Summary</h2>
+
+                    <div class="summary__item">
+                        <img class="summary__image" src="img/green-capsium.png" alt="Green Capsicum">
+                        <span class="summary__name">Green Capsicum x5</span>
+                        <span class="summary__price">$70.00</span>
+                    </div>
+
+                    <div class="summary__item">
+                        <img class="summary__image" src="img/red-capsium.png" alt="Red Capsicum">
+                        <span class="summary__name">Red Capsicum x1</span>
+                        <span class="summary__price">$14.00</span>
+                    </div>
+
+                    <div class="summary__line summary__line--bottom-border">
+                        <span>Subtotal:</span><span class="summary__price">$84.00</span>
+                    </div>
+                    <div class="summary__line summary__line--bottom-border">
+                        <span>Shipping:</span><span class="summary__price">Free</span>
+                    </div>
+                    <div class="summary__line summary__line--total">
+                        <span>Total:</span><strong>$84.00</strong>
+                    </div>
+
+                    <div class="summary__payment">
+                        <h3 class="summary__subtitle">Payment Method</h3>
+                        <label class="summary__radio">
+                            <input type="radio" name="payment" checked>
+                            <span class="summary__radio-indicator"></span>
+                            Cash on Delivery
+                        </label>
+                        <label class="summary__radio">
+                            <input type="radio" name="payment">
+                            <span class="summary__radio-indicator"></span>
+                            Paypal
+                        </label>
+                        <label class="summary__radio">
+                            <input type="radio" name="payment">
+                            <span class="summary__radio-indicator"></span>
+                            Amazon Pay
+                        </label>
+                    </div>
+
+                    <button type="button" class="summary__button">Place Order</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">thanks</footer>
+    </div>
+</body>
+
+</html>
