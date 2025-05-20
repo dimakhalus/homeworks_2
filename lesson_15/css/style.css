@@ -107,6 +107,12 @@
     visibility: visible;
 }
 
+@media (any-hover: none) {
+    [class*="button__"] {
+        visibility: visible;
+    }
+}
+
 [class*="button__"]:hover svg path {
     stroke: #fff;
 }
